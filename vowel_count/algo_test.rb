@@ -9,6 +9,7 @@ class AlgoTest < Minitest::Test
   end
 
   def test_it_can_join_string
+    skip
     algo = Algo.new
     assert_equal "abcd", algo.space_delete("ab cd")
   end
@@ -18,4 +19,4 @@ class AlgoTest < Minitest::Test
     string = "ab cd"
     assert_equal 1, algo.getCount(string)
   end
-end 
+end
