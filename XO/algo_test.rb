@@ -46,6 +46,6 @@ class AlgoTest < Minitest::Test
 
   def test_it_can_its_works_when_only_one_XO
     algo = Algo.new
-    assert_equal true, algo.XO("xAB")
+    assert_equal false, algo.XO("xAB")
   end
 end

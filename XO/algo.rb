@@ -13,9 +13,10 @@ class Algo
   end
 
   def XO(str)
-    if ox_groups(str)["x"] == nil || ox_groups(str)["o"] == nil
-      true
-    elsif ox_groups(str)["x"].count == ox_groups(str)["o"].count
+    x_count = ox_groups(str)["x"]
+    o_count = ox_groups(str)["o"]
+
+    if x_count.count == o_count.count || x_count == o_count
       true
     else
       false
