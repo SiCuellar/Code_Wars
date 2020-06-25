@@ -15,9 +15,6 @@ class Algo
   end
 end
 
-
-
-
 # def DNA_strand(dna)
 #   dna.tr("ACTG", "TGAC")
 # end
