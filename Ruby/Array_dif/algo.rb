@@ -6,3 +6,11 @@ class Algo
     a - common_values
   end
 end
+
+
+
+# Wow!!!!!!!!!!!!!!!!
+# Very easy!
+# def array_diff(a, b)
+#   a - b
+# end
