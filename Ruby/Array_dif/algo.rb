@@ -2,6 +2,7 @@ require 'pry'
 
 class Algo
   def array_dif(a ,b)
-    a
+    common_values = a & b
+    a - common_values
   end
 end

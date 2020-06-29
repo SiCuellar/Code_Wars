@@ -8,10 +8,24 @@ class AlgoTest < Minitest::Test
     assert_instance_of Algo, algo
   end
 
-  def test_it_can_read_lists
+  def test_it_can_remove_values_from_all_A_if_in_B
     algo = Algo.new
-    a = [1,2,3]
-    b = [1,2,3]
-    assert_equal [1,2,3], algo.array_dif(a, b)
+    a = [1,2,2]
+    b = [1]
+    assert_equal [2,2], algo.array_dif(a, b)
+  end
+
+  def test_it_can_remove_values_from_all_B_if_in_A
+    algo = Algo.new
+    a = [1,2,2]
+    b = [2]
+    assert_equal [1], algo.array_dif(a, b)
+  end
+
+  def test_it_can_subtract_empty_lists
+    algo = Algo.new
+    a = [1,2,2]
+    b = []
+    assert_equal [1,2,2], algo.array_dif(a, b)
   end
 end
