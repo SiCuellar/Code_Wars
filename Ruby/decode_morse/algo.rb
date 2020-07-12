@@ -7,3 +7,6 @@ class Algo
      MORSE_CODE[let]
    end
 end
+
+
+# morseCode.strip.split("   ").map { |w| w.split(" ").map { |c| MORSE_CODE[c] }.join }.join(" ")
