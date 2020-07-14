@@ -11,3 +11,11 @@ class Algo
     dict
   end
 end
+
+
+
+
+#  Fancy short way of solving it
+# def count_chars(s)
+#   s.chars.uniq.each_with_object({}) { |c, h| h[c] = s.count(c) }
+# end
