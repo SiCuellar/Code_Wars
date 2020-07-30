@@ -22,4 +22,9 @@ class AlgoTest < Minitest::Test
     algo = Algo.new
     assert_equal [1, 2, 3, 4, 5, 6, 7, 8, 9], algo.sum_dig_pow(1,10)
   end
+
+  def test_it_can_return_all_values_that_are_equal_to_exp_sum
+    algo = Algo.new
+    assert_equal [1, 2, 3, 4, 5, 6, 7, 8, 9, 89], algo.sum_dig_pow(1,100)
+  end
 end
