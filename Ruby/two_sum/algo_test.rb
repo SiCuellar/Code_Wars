@@ -7,4 +7,9 @@ class Algotest < Minitest::Test
     algo = Algo.new
     assert_instance_of Algo, algo
   end
+
+  def test_it_says_something
+    algo = Algo.new
+    assert_equel alog.do_something
+  end
 end
